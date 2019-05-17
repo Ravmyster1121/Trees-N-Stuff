@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Trees-N-Stuff';
+
+
+  searchArray = [];
+
+  addSearch(value) {
+    this.searchArray.push(value);
+    console.log(this.searchArray);
+  }
 }

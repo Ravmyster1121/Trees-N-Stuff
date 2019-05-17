@@ -3,12 +3,15 @@
     <div class = "form-group">
     <h1 class  = "text-center text-primary">Search</h1>
       <div class = "input-group-prepend">
-        <input type = "text" #userInput class = "form-control" placeholder = "Input Here" name = "userInput" ngModel>
-        <span class = "input-group-text">Search</span>
-        <button class = "searchbtn">Search</button>
+        <input type = "text" #searchTerm class = "form-control" placeholder = "Input Here" name = "userInput" ngModel>
 
-        <p>{{userInput.value}}</p>
-        <p>Hello World</p>
+        <button class = "searchbtn" (click) = "addSearch(searchTerm.value)">Add Search</button>
+
+        <div class = "data">
+            <ul class = "list-instyled">
+                <li *ngFor = "let searchTerm of searchArray">{{searchTerm}}</li>
+            </ul>
+        </div>
       </div>
     </div>
   </form>
