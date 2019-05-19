@@ -6,12 +6,9 @@
   This is where the list of trees and other products will be located
 </p>
 
-<div class = "storePane">
-  <section class="productCardPane">
-    <app-tree-item></app-tree-item>
-  </section>
-  
-  <section class="productCardPane">
-    <app-tree-item></app-tree-item>
-  </section>
-</div>
+<section class="floatCenter">
+  <app-tree-item
+    *ngFor="let storeItem of storeItems"
+    [storeItem] = "storeItem">
+  </app-tree-item>
+</section>

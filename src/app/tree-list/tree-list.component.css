@@ -1,10 +1,18 @@
-section.productCardPane{
-    background-color: lightgrey;
-    border: 2px solid;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 5px;
+:host {
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+    padding: 10px;
+}
+
+section.floatCenter{
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    float: none;
     width: auto;
     height: auto;
-    float: left;
+    margin-left: auto;
+    margin-right: auto;
 }
