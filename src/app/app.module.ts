@@ -23,6 +23,7 @@ const appRoutes: Routes = [
     AppComponent,
     CartViewComponent,
     TreeListComponent,
+    TreeItemComponent,
     PageNotFoundComponent,
     TreeItemComponent,
   ],
