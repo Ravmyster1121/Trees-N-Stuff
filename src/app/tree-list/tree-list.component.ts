@@ -9,7 +9,7 @@ export class TreeListComponent {
   storeItems = [
     {
       id: 1,
-      name: "Oak Tree Sapling",
+      name: "Oak Sapling",
       isTree: true,
       itemPrice: 25,
       itemDescr: "Use on dirt to plant sapling."
