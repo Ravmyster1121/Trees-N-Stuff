@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { CartViewComponent }      from './cart-view/cart-view.component';
 import { TreeListComponent }      from './tree-list/tree-list.component';
 import { PageNotFoundComponent }  from './page-not-found/page-not-found.component';
-
 import { FormsModule }            from '@angular/forms';
 import { RouterModule, Routes }   from '@angular/router';
+import { TreeItemComponent }      from './tree-item/tree-item.component';
 
 // You will need to add these routes manually
 const appRoutes: Routes = [
@@ -24,6 +24,7 @@ const appRoutes: Routes = [
     CartViewComponent,
     TreeListComponent,
     PageNotFoundComponent,
+    TreeItemComponent,
   ],
   imports: [
     BrowserModule,
