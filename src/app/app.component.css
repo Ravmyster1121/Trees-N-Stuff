@@ -55,3 +55,16 @@ form{
     max-width: 25em;
     margin: 1em auto;
 }
+
+section.application{
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    float: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: red;
+}
