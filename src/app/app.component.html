@@ -1,4 +1,5 @@
-<div class = "container">
+<!-- Jadan please do this in a new component, if you don't know how just ask -->
+<!-- <div class = "container">
 <form>
     <div class = "form-group">
     <h1 class  = "text-center text-primary">Search</h1>
@@ -15,4 +16,22 @@
       </div>
     </div>
   </form>
-</div>
+</div> -->
+<!--Creates the hyperlinks to route to another view -->
+  <nav id="navbar">
+    <h3 id="navTitle">Trees-N-Stuff</h3>
+    <a routerLink='/tree-list' routerLinkActive='active'>Trees</a>
+    <a routerLink='/cart-view' routerLinkActive='active'>Cart</a>
+    <a routerLink='/purchase' routerLinkActive='active'>Purchase</a>
+  </nav>
+
+  <div class="content">
+    <h1 id="mainTitle">Plant-A-Tree</h1>
+    <h2>Created by: Trees-N-Stuff</h2>
+
+    <!-- Where the output is shown -->
+    <router-outlet></router-outlet>
+  </div>
+  
+
+

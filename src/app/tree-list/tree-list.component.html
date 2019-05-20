@@ -1,0 +1,14 @@
+<h2>
+  Product List
+</h2>
+
+<p>
+  This is where the list of trees and other products will be located
+</p>
+
+<section class="floatCenter">
+  <app-tree-item
+    *ngFor="let storeItem of storeItems"
+    [storeItem] = "storeItem">
+  </app-tree-item>
+</section>

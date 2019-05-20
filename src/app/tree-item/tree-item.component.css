@@ -1,0 +1,63 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: auto;
+    margin: 2px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* SQUARE IMAGES ONLY */
+div.imagePane{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    border: solid 2px;
+    width: 125px;
+    height: 125px;
+}
+
+div.descriptionPane{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: .8em;
+    padding: 3px;
+}
+
+a.price{
+    display: block;
+    background-color: yellowgreen;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    padding: 10px;
+    font-size: .8em;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+a.addCart {
+    display: block;
+    background-color: #37ad79;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    padding: 10px;
+    font-size: .8em;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    float: right;
+}
