@@ -9,11 +9,13 @@ import { PageNotFoundComponent }  from './page-not-found/page-not-found.componen
 
 import { FormsModule }            from '@angular/forms';
 import { RouterModule, Routes }   from '@angular/router';
+import { PurchaseComponent } from './purchase/app.component';
 
 // You will need to add these routes manually
 const appRoutes: Routes = [
   { path: 'cart-view', component: CartViewComponent},
   { path: 'tree-list', component: TreeListComponent},
+  { path: 'purchase', component: PurchaseComponent},
   { path: '', redirectTo: '/tree-list', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent},
 ]
@@ -23,6 +25,7 @@ const appRoutes: Routes = [
     AppComponent,
     CartViewComponent,
     TreeListComponent,
+    PurchaseComponent,
     PageNotFoundComponent,
   ],
   imports: [
