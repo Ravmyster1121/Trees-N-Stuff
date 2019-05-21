@@ -13,7 +13,7 @@ export class TreeListComponent {
       isTree: true,
       itemPrice: 25,
       itemDescr: "Use on dirt to plant sapling.",
-      itemImg: "tree.jpg"
+      itemImg: "OakSapling.png"
     },
     {
       id: 2,
