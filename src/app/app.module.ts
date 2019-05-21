@@ -16,7 +16,7 @@ const appRoutes: Routes = [
   { path: 'tree-list', component: ProductListComponent},
   { path: 'purchase', component: PurchaseComponent },
   { path: '', redirectTo: '/tree-list', pathMatch: 'full'},
-  { path: '**', component: PageNotFoundComponent},
+  { path: '**', component: PageNotFoundComponent}
 ]
 
 @NgModule({
