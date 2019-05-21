@@ -10,6 +10,7 @@ import { FormsModule }            from '@angular/forms';
 import { RouterModule, Routes }   from '@angular/router';
 import { PurchaseComponent } from './purchase/app.component';
 import { TreeItemComponent }      from './tree-item/tree-item.component';
+import { SearchComponent } from './search/search.component';
 
 // You will need to add these routes manually
 const appRoutes: Routes = [
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
     TreeItemComponent,
     PageNotFoundComponent,
     TreeItemComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
