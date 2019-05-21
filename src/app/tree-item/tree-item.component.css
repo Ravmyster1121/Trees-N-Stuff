@@ -10,13 +10,18 @@
     padding: 10px;
 }
 
+a.cardLink{
+    text-decoration: none;
+    color: inherit;
+}
+
 h2{
     text-align: center;
     margin-right: auto;
     margin-left: auto;
 }
 
-/* SQUARE IMAGES ONLY */
+/* SQUARE IMAGES ONLY (125px by 125px) */
 div.imagePane{
     margin-right: auto;
     margin-left: auto;
