@@ -9,7 +9,8 @@
 <section class="floatCenter">
   <app-tree-item
     *ngFor="let storeItem of storeItems"
-    [storeItem] = "storeItem">
+    [storeItem] = storeItem
+    (click)="onSelect([storeItem])">
   </app-tree-item>
   
 </section>

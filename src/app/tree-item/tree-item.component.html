@@ -1,16 +1,14 @@
-<a class="cardLink" routerLink='/product-page' routerLinkActive='active'>
-  <h2>{{ storeItem.name }}</h2>
-  <div class="imagePane">
-    <!-- Images should be 125px X 125px -->
-    <img src="assets/img/{{storeItem.itemImg}}" alt="Unable to locate image">
-  </div>
-  <div class="descriptionPane">
-    {{ storeItem.itemDescr }}
-  </div>
-  <a class="price">
-    ${{ storeItem.itemPrice }}
-  </a>
-  <a class="addCart">
-    Add To Cart
-  </a>
+<h2>{{ storeItem.name }}</h2>
+<div class="imagePane">
+  <!-- Images should be 125px X 125px -->
+  <img src="assets/img/{{storeItem.itemImg}}" alt="Unable to locate image">
+</div>
+<div class="descriptionPane">
+  {{ storeItem.itemDescr }}
+</div>
+<a class="price">
+  ${{ storeItem.itemPrice }}
+</a>
+<a class="addCart">
+  Add To Cart
 </a>

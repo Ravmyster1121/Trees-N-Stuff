@@ -17,7 +17,7 @@ const appRoutes: Routes = [
   { path: 'cart-view', component: CartViewComponent},
   { path: 'tree-list', component: TreeListComponent},
   { path: 'purchase', component: PurchaseComponent },
-  { path: 'product-page', component: ProductPageComponent },
+  { path: 'product-page/:id', component: ProductPageComponent }, //Passing in all of the params of the product that was selected through the URL
   { path: '', redirectTo: '/tree-list', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent},
 ]

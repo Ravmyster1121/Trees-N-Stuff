@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tree-list',
   templateUrl: './tree-list.component.html',
   styleUrls: ['./tree-list.component.css']
 })
-export class TreeListComponent {
-  storeItems = [
+export class TreeListComponent implements OnInit{
+  public storeItems = [
     {
       id: 1,
       name: "Oak Sapling",
@@ -32,4 +33,11 @@ export class TreeListComponent {
       itemImg: "axe.png"
     }
   ];
+
+  constructor(private router: Router) {}
+  ngOnInit() {}
+
+  onSelect([storeItem]){
+    this.router.navigate(['/product-page', storeItem.id])
+  }
 }
