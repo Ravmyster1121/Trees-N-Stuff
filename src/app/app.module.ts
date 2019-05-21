@@ -3,19 +3,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // These Components were made by running the command "ng generate component component-name" and will appear here
-import { CartViewComponent }      from './cart-view/cart-view.component';
-import { TreeListComponent }      from './tree-list/tree-list.component';
+import { ProductListComponent }      from './product-list/product-list.component';
 import { PageNotFoundComponent }  from './page-not-found/page-not-found.component';
 import { FormsModule }            from '@angular/forms';
 import { RouterModule, Routes }   from '@angular/router';
-import { TreeItemComponent }      from './tree-item/tree-item.component';
+import { ProductComponent }      from './product/product.component';
 import { PurchaseComponent } from './purchase/purchase.component';
 
 
 // You will need to add these routes manually
 const appRoutes: Routes = [
-  { path: 'cart-view', component: CartViewComponent},
-  { path: 'tree-list', component: TreeListComponent},
+  { path: 'tree-list', component: ProductListComponent},
   { path: 'purchase', component: PurchaseComponent },
   { path: '', redirectTo: '/tree-list', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent},
@@ -24,11 +22,9 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    CartViewComponent,
-    TreeListComponent,
-    TreeItemComponent,
+    ProductListComponent,
+    ProductComponent,
     PageNotFoundComponent,
-    TreeItemComponent,
     PurchaseComponent,
   ],
   imports: [
