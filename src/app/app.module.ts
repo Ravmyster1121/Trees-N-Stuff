@@ -10,18 +10,13 @@ import { FormsModule }            from '@angular/forms';
 import { RouterModule, Routes }   from '@angular/router';
 import { TreeItemComponent }      from './tree-item/tree-item.component';
 import { PurchaseComponent } from './purchase/purchase.component';
-import { ProductComponent } from './product/product.component';
-import { CartComponent } from './cart/cart.component';
 
-import { ProductService } from './services/product.service';
 
 // You will need to add these routes manually
 const appRoutes: Routes = [
   { path: 'cart-view', component: CartViewComponent},
   { path: 'tree-list', component: TreeListComponent},
   { path: 'purchase', component: PurchaseComponent },
-  { path: 'product', component: ProductComponent},
-  { path: 'cart', component: CartComponent},
   { path: '', redirectTo: '/tree-list', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent},
 ]
@@ -35,8 +30,6 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     TreeItemComponent,
     PurchaseComponent,
-    ProductComponent,
-    CartComponent,
   ],
   imports: [
     BrowserModule,
