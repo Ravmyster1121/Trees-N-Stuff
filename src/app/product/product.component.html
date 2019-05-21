@@ -1,0 +1,25 @@
+<h2>
+  Cart View
+</h2>
+
+  <table align="center" border="1">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Photo</th>
+      <th>Buy</th>
+    </tr>
+
+    <tr *ngFor = "let product of products">
+      <td>{{product.productId}}</td>
+      <td>{{product.productName}}</td>
+      <td>{{product.productPrice}}</td>
+      <td>
+        <img src = "/assets/img/{{product.productImage}}" width = "50">
+      </td>
+      <td>
+        <a [routerLink] = "['/cart', { id: product.productId }]">Buy Now</a>
+      </td>
+    </tr>
+  </table>
