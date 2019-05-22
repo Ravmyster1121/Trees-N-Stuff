@@ -11,6 +11,7 @@ import { PurchaseComponent }      from './purchase/purchase.component';
 import { PageNotFoundComponent }  from './page-not-found/page-not-found.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { SearchComponent } from './search/search.component';
+import { FilterPipe } from './filter.pipe';
 
 // You will need to add these routes manually
 const appRoutes: Routes = [
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     ProductPageComponent,
     SearchComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,

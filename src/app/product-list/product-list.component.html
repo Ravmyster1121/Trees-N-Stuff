@@ -2,12 +2,25 @@
   Product List
 </h2>
 
+    <!-- Search form -->
+    <form class="form-inline">
+      <input class="form-control" type="text" placeholder="Search Product" aria-label="Search" name = "userSearch">
+      <button mdbBtn size="sm" type="submit">Search!</button>
+    </form>
+
+    <div class="md-form">
+      <input type="search" [(ngModel)]="searchText" placeholder="Search text">
+    </div>
+    <ul *ngFor="let data of dataset | filter: searchText">
+      <li>{{data}}</li>
+    </ul>
 <p>
   This is where the list of trees and other products will be located
 </p>
 
 <!-- Took this out momentarily -> (click)="onSelect([storeItem]" --> 
 <section class="floatCenter">
+  
   <app-product
     *ngFor="let storeItem of storeItems"
     [storeItem] = "storeItem">
