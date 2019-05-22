@@ -1,0 +1,21 @@
+<h2>
+  {{ cartItem.product.name }}
+</h2>
+
+<div class="imagePane">
+  <img src="assets/img/{{cartItem.product.img}}" alt="Unable to locate image">
+</div>
+
+<div class="descriptionPane">
+  {{ cartItem.product.descr }}
+</div>
+
+<p class="quantity">
+  Number in cart: {{ cartItem.quantity }}
+</p>
+
+<p class="totalprice">
+  Total Price: {{ cartItem.quantity * cartItem.product.price }}
+</p>
+
+<button class="removeFromCart" onclick="alert('Item removed from cart!')">Remove from Cart</button>

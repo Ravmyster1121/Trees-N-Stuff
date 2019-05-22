@@ -10,6 +10,7 @@ import { ProductComponent }       from './product/product.component';
 import { PurchaseComponent }      from './purchase/purchase.component';
 import { PageNotFoundComponent }  from './page-not-found/page-not-found.component';
 import { ProductPageComponent } from './product-page/product-page.component';
+import { CartViewComponent } from './cart-view/cart-view.component';
 
 // You will need to add these routes manually
 const appRoutes: Routes = [
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
     PurchaseComponent,
     PageNotFoundComponent,
     ProductPageComponent,
+    CartViewComponent,
   ],
   imports: [
     BrowserModule,

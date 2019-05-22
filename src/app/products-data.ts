@@ -19,4 +19,3 @@ export const PRODUCTS : Products[] = [{
         descr: "Chop wood faster when using an axe.",
         img: "axe.png"}
 ];
-

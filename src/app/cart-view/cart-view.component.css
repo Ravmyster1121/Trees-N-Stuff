@@ -1,0 +1,87 @@
+:host
+{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: auto;
+    margin: 2px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+a.cardLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+h2{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* SQUARE IMAGES ONLY (125px by 125px) */
+div.imagePane{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    border: solid 2px;
+    width: 125px;
+    height: 125px;
+}
+
+div.descriptionPane
+{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: .8em;
+    padding: 3px;
+}
+
+p.totalprice
+{
+    display: block;
+    background-color: yellowgreen;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    padding: 10px;
+    font-size: .8em;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+p.quantity
+{
+    display: block;
+    background-color: rgb(69, 92, 23);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    padding: 10px;
+    font-size: .8em;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+button.removeFromCart
+{
+    display: block;
+    background-color: #37ad79;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    padding: 10px;
+    font-size: .8em;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    float: right;
+}

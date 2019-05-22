@@ -2,9 +2,13 @@
     Purchase
 </h2>
 
-<p>
-    //Cart List Goes Here\\
-</p>
+<section class="floatCenter">
+    <app-cart-view
+        *ngFor="let cartItem of cartItems"
+        [cartItem] = "cartItem">
+    </app-cart-view>
+</section>
+
 
 <br>
 
