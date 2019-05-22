@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProductListComponent } from '../product-list/product-list.component';
 
 @Component({
   selector: 'app-product-page',
@@ -15,5 +14,4 @@ export class ProductPageComponent implements OnInit {
   ngOnInit() {
     this.productId = parseInt(this.route.snapshot.paramMap.get('id'));
   }
-
 }

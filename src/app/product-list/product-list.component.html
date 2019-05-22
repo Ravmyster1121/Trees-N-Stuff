@@ -6,11 +6,11 @@
   This is where the list of trees and other products will be located
 </p>
 
-<!-- If it doesn't work get rid of the double quotations next to storeItem --> 
+<!-- Took this out momentarily -> (click)="onSelect([storeItem]" --> 
 <section class="floatCenter">
   <app-product
     *ngFor="let storeItem of storeItems"
-    [storeItem] = storeItem (click)="onSelect([storeItem]">
+    [storeItem] = "storeItem">
   </app-product>
   
 </section>
