@@ -56,7 +56,7 @@ a.price
     float: left;
 }
 
-button.addCart
+button.addToCart
 {
     display: block;
     background-color: #37ad79;
@@ -86,7 +86,7 @@ p.quantity
     float: left;
 }
 
-button.removeCart
+button.removeFromCart
 {
     display: block;
     background-color: #37ad79;
