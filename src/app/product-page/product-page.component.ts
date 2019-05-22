@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Products } from '../products';
 import { PRODUCTS } from '../products-data'
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-product-page',
@@ -9,15 +9,13 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
   styleUrls: ['./product-page.component.css']
 })
 export class ProductPageComponent implements OnInit {
-  public productsList;
-  public productId;
-  public productName;
+  selectedProduct: Products;
 
   constructor(private route: ActivatedRoute) { }
 
+  //Retreives all of the relevant data for the selected product item
   ngOnInit() {
-    this.productsList = PRODUCTS;
-    this.productId = parseInt(this.route.snapshot.paramMap.get('id'));
-    this.productName = PRODUCTS[this.productId].name;
+    var productId = parseInt(this.route.snapshot.paramMap.get('id'));
+    this.selectedProduct = new Products(PRODUCTS[productId].id, PRODUCTS[productId].name, PRODUCTS[productId].price, PRODUCTS[productId].descr, PRODUCTS[productId].img)
   }
 }
