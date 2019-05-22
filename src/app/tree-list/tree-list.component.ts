@@ -1,0 +1,43 @@
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-tree-list',
+  templateUrl: './tree-list.component.html',
+  styleUrls: ['./tree-list.component.css']
+})
+export class TreeListComponent implements OnInit{
+  public storeItems = [
+    {
+      id: 1,
+      name: "Oak Sapling",
+      isTree: true,
+      itemPrice: 25,
+      itemDescr: "Use on dirt to plant sapling.",
+      itemImg: "OakSapling.png"
+    },
+    {
+      id: 2,
+      name: "Hoe",
+      isTree: false,
+      itemPrice: 10,
+      itemDescr: "Use on dirt to till into farmland.",
+      itemImg: "hoe.png"
+    },
+    {
+      id: 3,
+      name: "Axe",
+      isTree: false,
+      itemPrice: 10,
+      itemDescr: "Chop wood faster when using an axe.",
+      itemImg: "axe.png"
+    }
+  ];
+
+  constructor(private router: Router) {}
+  ngOnInit() {}
+
+  onSelect([storeItem]){
+    this.router.navigate(['/product-page', storeItem.id])
+  }
+}

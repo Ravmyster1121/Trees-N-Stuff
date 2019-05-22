@@ -9,15 +9,19 @@ import { ProductListComponent }   from './product-list/product-list.component';
 import { ProductComponent }       from './product/product.component';
 import { PurchaseComponent }      from './purchase/purchase.component';
 import { PageNotFoundComponent }  from './page-not-found/page-not-found.component';
+import { ProductPageComponent } from './product-page/product-page.component';
 
+// Tree-Item no longer exists and is now Product
+import { TreeItemComponent }      from './tree-item/tree-item.component';
 
 
 // You will need to add these routes manually
 const appRoutes: Routes = [
   { path: 'product-list', component: ProductListComponent},
   { path: 'purchase', component: PurchaseComponent },
-  { path: '', redirectTo: '/product-list', pathMatch: 'full'},
-  { path: '**', component: PageNotFoundComponent}
+  { path: 'product-page/:id', component: ProductPageComponent }, //Passing in all of the params of the product that was selected through the URL
+  { path: '', redirectTo: '/tree-list', pathMatch: 'full'},
+  { path: '**', component: PageNotFoundComponent},
 ]
 
 @NgModule({
@@ -27,6 +31,7 @@ const appRoutes: Routes = [
     ProductListComponent,
     PurchaseComponent,
     PageNotFoundComponent,
+    ProductPageComponent,
   ],
   imports: [
     BrowserModule,
