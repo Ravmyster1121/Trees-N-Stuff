@@ -10,7 +10,7 @@
 <section class="floatCenter">
   <app-product
     *ngFor="let storeItem of storeItems"
-    [storeItem] = "storeItem" (click)="onSelect([storeItem]">
+    [storeItem] = storeItem (click)="onSelect([storeItem]">
   </app-product>
   
 </section>

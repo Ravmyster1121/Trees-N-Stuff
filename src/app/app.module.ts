@@ -11,10 +11,6 @@ import { PurchaseComponent }      from './purchase/purchase.component';
 import { PageNotFoundComponent }  from './page-not-found/page-not-found.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 
-// Tree-Item no longer exists and is now Product
-import { TreeItemComponent }      from './tree-item/tree-item.component';
-
-
 // You will need to add these routes manually
 const appRoutes: Routes = [
   { path: 'product-list', component: ProductListComponent},

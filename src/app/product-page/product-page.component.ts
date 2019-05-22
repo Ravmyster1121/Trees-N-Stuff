@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { TreeListComponent } from '../tree-list/tree-list.component'
+import { ProductListComponent } from '../product-list/product-list.component';
 
 @Component({
   selector: 'app-product-page',
