@@ -5,21 +5,18 @@ export const PRODUCTS : Products[] = [{
         name: "Oak Sapling",
         price: 25,
         descr: "Use on dirt to plant sapling.",
-        img: "OakSapling.png",
-        quantity: 0},
+        img: "OakSapling.png"},
     {
         id: 2,
         name: "Hoe",
         price: 10,
         descr: "Use on dirt to till into farmland.",
-        img: "hoe.png",
-        quantity: 0},
+        img: "hoe.png"},
     {
         id: 3,
         name: "Axe",
         price: 10,
         descr: "Chop wood faster when using an axe.",
-        img: "axe.png",
-        quantity: 0}
+        img: "axe.png"}
 ];
 
