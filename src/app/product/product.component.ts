@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { PRODUCTS } from '../products-data';
 
 @Component({
   selector: 'app-product',
@@ -7,5 +8,5 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class ProductComponent{
-  @Input() storeItem;
+  @Input() storeItems;
 }
