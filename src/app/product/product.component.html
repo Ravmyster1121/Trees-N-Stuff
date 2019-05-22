@@ -1,3 +1,5 @@
+<script type="text/typescript" href="./products.ts"></script>
+
 <h2>
   {{ storeItem.name }}
 </h2>
@@ -14,10 +16,10 @@
   ${{ storeItem.price }}
 </a>
 
-<button class="addToCart" onClick="">Add to Cart</button>
+<button class="addToCart" onClick="addToCart()">Add to Cart</button>
 
 <p class="quantity">
     Number in cart: {{ storeItem.quantity }}
 </p>
 
-<button class="removeFromCart" onClick="">Remove from Cart</button>
+<button class="removeFromCart" onClick="removeFromCart()">Remove from Cart</button>

@@ -20,15 +20,15 @@ export class Products {
             this.img = img;
             this.quantity = quantity;
         }
-
-    
 }
 
-    function addToCart() {
+
+
+    function addItem(): void {
         this.quantity++;
     }
     
-    function removeFromCart() {
+    function removeItem(): void {
         if(this.quantity !< 0)
         {
             this.quantity = 0;
