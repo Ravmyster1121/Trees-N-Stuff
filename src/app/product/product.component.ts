@@ -8,5 +8,5 @@ import { PRODUCTS } from '../products-data';
 })
 
 export class ProductComponent{
-  @Input() storeItems;
+  @Input() storeItem;
 }
