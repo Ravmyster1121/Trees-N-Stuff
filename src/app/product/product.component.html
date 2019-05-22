@@ -1,13 +1,23 @@
-<h2>{{ storeItem.name }}</h2>
+<h2>
+  {{ storeItem.name }}
+</h2>
+
 <div class="imagePane">
-  <img src="assets/img/{{storeItem.itemImg}}" alt="Unable to locate image">
+  <img src="assets/img/{{storeItem.img}}" alt="Unable to locate image">
 </div>
+
 <div class="descriptionPane">
-  {{ storeItem.itemDescr }}
+  {{ storeItem.descr }}
 </div>
+
 <a class="price">
-  ${{ storeItem.itemPrice }}
+  ${{ storeItem.price }}
 </a>
-<!-- <a class="addCart"> -->
-  <button class="addCart" onClick="addItemToCart()">Add To Cart</button>
-<!-- </a> -->
+
+<button class="addCart" onClick="">Add to Cart</button>
+
+<p class="quantity">
+    Number in cart: {{ storeItem.quantity }}
+</p>
+
+<button class="removeCart" onClick="">Remove from Cart</button>

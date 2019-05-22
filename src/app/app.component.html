@@ -1,26 +1,7 @@
-<!-- Jadan please do this in a new component, if you don't know how just ask -->
-<!-- <div class = "container">
-<form>
-    <div class = "form-group">
-    <h1 class  = "text-center text-primary">Search</h1>
-      <div class = "input-group-prepend">
-        <input type = "text" #searchTerm class = "form-control" placeholder = "Input Here" name = "userInput" ngModel>
-
-        <button class = "searchbtn" (click) = "addSearch(searchTerm.value)">Add Search</button>
-
-        <div class = "data">
-            <ul class = "list-instyled">
-                <li *ngFor = "let searchTerm of searchArray">{{searchTerm}}</li>
-            </ul>
-        </div>
-      </div>
-    </div>
-  </form>
-</div> -->
 <!--Creates the hyperlinks to route to another view -->
   <nav id="navbar">
     <h3 id="navTitle">Trees-N-Stuff</h3>
-    <a routerLink='/tree-list' routerLinkActive='active'>Products</a>
+    <a routerLink='/product-list' routerLinkActive='active'>Products</a>
     <a routerLink='/purchase' routerLinkActive='active'>Purchase</a>
   </nav>
 

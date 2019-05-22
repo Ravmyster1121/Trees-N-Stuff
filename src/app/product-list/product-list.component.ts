@@ -10,23 +10,26 @@ export class ProductListComponent {
     {
       id: 1,
       name: "Oak Sapling",
-      itemPrice: 25,
-      itemDescr: "Use on dirt to plant sapling.",
-      itemImg: "tree.jpg"
+      price: 25,
+      descr: "Use on dirt to plant sapling.",
+      img: "tree.jpg",
+      quantity: 0
     },
     {
       id: 2,
       name: "Hoe",
-      itemPrice: 10,
-      itemDescr: "Use on dirt to till into farmland.",
-      itemImg: "hoe.png"
+      price: 10,
+      descr: "Use on dirt to till into farmland.",
+      img: "hoe.png",
+      quantity: 0
     },
     {
       id: 3,
       name: "Axe",
-      itemPrice: 10,
-      itemDescr: "Chop wood faster when using an axe.",
-      itemImg: "axe.png"
+      price: 10,
+      descr: "Chop wood faster when using an axe.",
+      img: "axe.png",
+      quantity: 0
     }
   ];
 }
