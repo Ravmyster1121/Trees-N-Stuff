@@ -11,6 +11,18 @@ export class CartViewComponent{
 
   removeItem(selectedItem)
   {
+    if(this.cartItem[selectedItem].product.quantity > 0)
+    {
+      this.cartItem[selectedItem].product.quantity--;
 
+      alert('Item has been removed from cart!');
+    }
+    else
+    {
+      this.cartItem[selectedItem].product.quantity = 0;
+
+      alert('There are no items to remove!');
+    }
+    
   }
 }

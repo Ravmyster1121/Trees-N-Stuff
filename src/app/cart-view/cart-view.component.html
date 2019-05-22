@@ -15,7 +15,7 @@
 </p>
 
 <p class="totalprice">
-  Total Price: {{ cartItem.quantity * cartItem.product.price }}
+  Total Price: {{ cartItem.product.price }}
 </p>
 
-<button class="removeFromCart" onclick="alert('Item removed from cart!')">Remove from Cart</button>
+<button class="removeFromCart" onclick="removeItem(cartItem.product.id)">Remove from Cart</button>
