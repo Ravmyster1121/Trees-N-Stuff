@@ -16,6 +16,6 @@ export class ProductPageComponent implements OnInit {
   //Retreives all of the relevant data for the selected product item
   ngOnInit() {
     var productId = parseInt(this.route.snapshot.paramMap.get('id'));
-    this.selectedProduct = new Products(PRODUCTS[productId].id, PRODUCTS[productId].name, PRODUCTS[productId].price, PRODUCTS[productId].descr, PRODUCTS[productId].img)
+    this.selectedProduct = new Products(PRODUCTS[productId].id, PRODUCTS[productId].name, PRODUCTS[productId].price, PRODUCTS[productId].cardDescr, PRODUCTS[productId].thumbnail, PRODUCTS[productId].img1, PRODUCTS[productId].img2, PRODUCTS[productId].img3)
   }
 }

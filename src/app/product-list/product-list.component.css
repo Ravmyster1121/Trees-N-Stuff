@@ -5,7 +5,12 @@
     padding: 10px;
 }
 
+app-product{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 section.floatCenter{
+    font-family: Arial, Helvetica, sans-serif;
     flex: 1;
     display: flex;
     flex-flow: row wrap;

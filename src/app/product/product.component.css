@@ -11,18 +11,21 @@
     padding: 10px;
 }
 
-a.cardLink{
+a.clickPane{
     text-decoration: none;
     color: inherit;
 }
 
-h2{
+h2.productTitle{
+    font-size: 150%;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-/* SQUARE IMAGES ONLY (125px by 125px) */
+/* THUMBNAIL IMAGE MUST BE SQUARE (125px by 125px) */
 div.imagePane{
     margin-right: auto;
     margin-left: auto;

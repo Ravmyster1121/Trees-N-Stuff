@@ -2,21 +2,29 @@ export class Products {
     id: any;
     name: string;
     price: number;
-    descr: string;
-    img: string;
-    quantity: number;
+    cardDescr: string;
+    thumbnail: string;
+    img1: string;
+    img2: string;
+    img3: string;
 
     constructor(id: any,
         name: string,
         price: number,
-        descr: string,
-        img: string,)
+        cardDescr: string,
+        thumbnail: string,
+        img1: string,
+        img2: string,
+        img3: string)
         {
             this.id = id;
             this.name = name;
             this.price = price;
-            this.descr = descr;
-            this.img = img;
+            this.cardDescr = cardDescr;
+            this.thumbnail = thumbnail;
+            this.img1 = img1;
+            this.img2 = img2;
+            this.img3 = img3;
         }
 }
 
