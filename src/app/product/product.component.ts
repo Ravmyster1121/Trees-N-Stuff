@@ -25,7 +25,7 @@ export class ProductComponent{
   {
     this.storeItems[selectedItem].quantity++;
 
-    alert(this.storeItems[selectedItem].quantity);
+    //alert(this.storeItems[selectedItem].quantity);
     alert('Item added to cart!');
   }
   

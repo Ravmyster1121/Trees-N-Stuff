@@ -33,7 +33,7 @@ export class CartViewComponent{
     {
       this.cartItems[selectedItem].quantity--;
       
-      alert(this.cartItems[selectedItem].quantity);
+      //alert(this.cartItems[selectedItem].quantity);
       alert('Item removed from cart!');
     }
 
