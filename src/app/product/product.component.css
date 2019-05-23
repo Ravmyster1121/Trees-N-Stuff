@@ -29,10 +29,10 @@ h2.productTitle{
 div.imagePane{
     margin-right: auto;
     margin-left: auto;
-    padding: 0px;
+    padding: none;
     border: solid 2px;
-    width: 125px;
-    height: 125px;
+    width: auto;
+    height: auto;
 }
 
 div.descriptionPane

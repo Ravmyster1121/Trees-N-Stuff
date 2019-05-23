@@ -1,7 +1,31 @@
-div.carouselContainer{
-    width: 300px;
-    height: 300px;
+h1{
     margin-right: auto;
     margin-left: auto;
+}
+
+div.carouselContainer{
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div.infoContainer{
+    border: solid, 2px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
+}
+
+p.productDescription{
+    text-align: center;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+b.tag{
+    font-size: 150%;
 }
