@@ -11,25 +11,28 @@
     padding: 10px;
 }
 
-a.cardLink{
+a.clickPane{
     text-decoration: none;
     color: inherit;
 }
 
-h2{
+h2.productTitle{
+    font-size: 150%;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-/* SQUARE IMAGES ONLY (125px by 125px) */
+/* THUMBNAIL IMAGE MUST BE SQUARE (125px by 125px) */
 div.imagePane{
     margin-right: auto;
     margin-left: auto;
-    padding: 0px;
+    padding: none;
     border: solid 2px;
-    width: 125px;
-    height: 125px;
+    width: auto;
+    height: auto;
 }
 
 div.descriptionPane
@@ -54,6 +57,21 @@ p.totalprice
     color: white;
     text-decoration: none;
     float: left;
+}
+
+button.addToCart
+{
+    display: block;
+    background-color: #37ad79;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    padding: 10px;
+    font-size: .8em;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    float: right;
 }
 
 p.quantity

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart-view',
@@ -9,20 +10,9 @@ import { Component, Input } from '@angular/core';
 export class CartViewComponent{
   @Input() cartItem;
 
-  removeItem(selectedItem)
-  {
-    if(this.cartItem[selectedItem].product.quantity > 0)
-    {
-      this.cartItem[selectedItem].product.quantity--;
+  constructor(private router: Router){}
 
-      alert('Item has been removed from cart!');
-    }
-    else
-    {
-      this.cartItem[selectedItem].product.quantity = 0;
-
-      alert('There are no items to remove!');
-    }
-    
+  onClick(selectedItem){
+    this.router.navigate(['/product-page', selectedItem]);
   }
 }

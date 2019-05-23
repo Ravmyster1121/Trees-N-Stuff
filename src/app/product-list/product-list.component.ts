@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PRODUCTS } from '../products-data';
+import { Cart } from '../cart';
 
 @Component({
   selector: 'app-product-list',
@@ -8,5 +8,5 @@ import { PRODUCTS } from '../products-data';
 })
 
 export class ProductListComponent {
-  storeItems = PRODUCTS;
+  storeItems = Cart;
 }

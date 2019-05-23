@@ -1,21 +1,23 @@
-<h2>
-  {{ cartItem.product.name }}
-</h2>
+<a class="clickPane" (click)="onClick(cartItem.product.id)">
+  <h2 class="productTitle">
+    {{ cartItem.product.name }}
+  </h2>
 
-<div class="imagePane">
-  <img src="assets/img/{{cartItem.product.img}}" alt="Unable to locate image">
-</div>
+  <div class="imagePane">
+    <img src="assets/img/thumbs/{{cartItem.product.thumbnail}}" alt="Unable to locate image">
+  </div>
 
-<div class="descriptionPane">
-  {{ cartItem.product.descr }}
-</div>
+  <div class="descriptionPane">
+    {{ cartItem.product.cardDescr }}
+  </div>
+</a>
 
 <p class="quantity">
   Number in cart: {{ cartItem.quantity }}
 </p>
 
 <p class="totalprice">
-  Total Price: {{ cartItem.product.price }}
+  Total Price: ${{ cartItem.product.price * cartItem.quantity }}
 </p>
 
-<button class="removeFromCart" onclick="removeItem(cartItem.product.id)">Remove from Cart</button>
+<button class="removeFromCart" onclick="alert('Item removed from cart!')">Remove from Cart</button>
