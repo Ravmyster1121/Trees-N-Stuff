@@ -1,6 +1,7 @@
 import { BrowserModule }  from '@angular/platform-browser';
 import { NgModule }       from '@angular/core';
 import { AppComponent }   from './app.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 // These Components were made by running the command "ng generate component component-name" and will appear here
 import { FormsModule }            from '@angular/forms';
