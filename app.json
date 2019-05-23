@@ -1,0 +1,52 @@
+{
+    "name": "Plant A Tree Application",
+    "description": "This is a progressive web application that allows customers to add trees and products to a cart which they can purchase.",
+    "keywords": [
+        "plantatree",
+        "onlinepurchasing",
+        "progressivewebapp"
+    ],
+    "website": "https://trees-n-stuff.herokuapp.com",
+    "repository": "https://github.com/Ravmyster1121/Trees-N-Stuff",
+    "success_url": "/product-list",
+    "scripts": {
+        "postdeploy": "bundle exec rake bootstrap"
+    },
+    "env": {
+        "SECRET_TOKEN": {
+            "description": "A secret key for verifying the integrity of signed cookies",
+            "generator": "secret"
+        },
+        "WEB_CONCURRENCY": {
+            "description": "The number of purposes to run.",
+            "value": "5"
+        }
+    },
+    "formation": {
+        "web": {
+            "quantity": 2,
+            "size": "Performance-M"
+        }
+    },
+    "image": "heroku/ruby",
+    "addons": [
+        "openredis",
+        {
+            "plan": "mongolab:shared-single-small",
+            "as": "MONGO"
+        },
+        {
+            "plan": "heroku-postgresql",
+            "options": {
+                "verson": "9.5"
+            }
+        }
+    ],
+    "environments": {
+        "test": {
+            "env": {
+                "SECRET_TOKEN": "test-secret"
+            }
+        }
+    }
+}
