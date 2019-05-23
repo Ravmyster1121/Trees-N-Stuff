@@ -8,4 +8,15 @@ import { PRODUCTS } from '../products-data';
 })
 export class ProductListComponent {
   storeItems = PRODUCTS;
+
+  prevSearch = [];
+
+  searchProduct(userSearch: string) {
+    if (userSearch) {
+      this.prevSearch.push(userSearch);
+      if(this.prevSearch.length > 3){
+        this.prevSearch.shift()
+      }   
+    }
+  }
 }

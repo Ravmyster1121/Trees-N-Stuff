@@ -1,6 +1,11 @@
-<!-- Search form -->
-<form class="form-inline md-form form-sm">
-  <i class="fas fa-search" aria-hidden="true"></i>
-  <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"
-    mdbInput>
-</form>
+    <!-- Search-->
+    <div class="md-form">
+      <input #userSearch type="search" [(ngModel)]="searchText" placeholder="Search text">
+      <button (click)="searchProduct(userSearch.value)">Search!</button>
+
+    </div>
+    <ul *ngFor="let data of dataset | filter: searchText">
+      <li>{{data}}</li>
+    </ul>
+
+    

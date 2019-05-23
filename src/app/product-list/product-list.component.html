@@ -4,10 +4,13 @@
 
     <!-- Search-->
     <div class="md-form">
-      <input type="search" [(ngModel)]="searchText" placeholder="Search text">
+      <input #userSearch type="search" [(ngModel)]="searchText" placeholder="Search text">
+      <button (click)="searchProduct(userSearch.value)">Search!</button>
+
     </div>
-    <ul *ngFor="let data of dataset | filter: searchText">
-      <li>{{data}}</li>
+
+    <ul title = "Previous Searches:">
+      <li *ngFor="let search of prevSearch">{{search}}</li>
     </ul>
 <p>
   This is where the list of trees and other products will be located

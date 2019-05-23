@@ -16,3 +16,16 @@ section.floatCenter{
     margin-left: auto;
     margin-right: auto;
 }
+
+ul[title]::before {
+    content: attr(title);
+    /* then add some nice styling as needed, eg: */
+    display: block;
+    font-weight: bold;
+    padding: 4px;
+}
+
+ul
+{
+list-style-type: none;
+}
