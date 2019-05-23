@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { PRODUCTS } from '../products-data';
 
 @Component({
   selector: 'app-product',
@@ -9,10 +10,10 @@ import { Router } from '@angular/router';
 
 export class ProductComponent{
   @Input() storeItem;
-  
+
   constructor(private router: Router){}
 
-  onSelect([storeItem]){
-    this.router.navigate(['/product-page', storeItem.id]);
+  onClick(selectedItem){
+    this.router.navigate(['/product-page', selectedItem]);
   }
 }

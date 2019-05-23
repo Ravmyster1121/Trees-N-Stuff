@@ -1,17 +1,25 @@
-<h2>
-  {{ storeItem.name }}
-</h2>
+<!-- Defines the layout of the product cards on the products page -->
 
-<div class="imagePane">
-  <img src="assets/img/{{storeItem.img}}" alt="Unable to locate image">
-</div>
+<a class="clickPane" (click)="onClick(storeItem.id)">
+  <h2 class="productTitle">
+    <b>{{ storeItem.name }}</b>
+  </h2>
 
-<div class="descriptionPane">
-  {{ storeItem.descr }}
-</div>
+  <div class="imagePane">
+    <img src="assets/img/thumbs/{{ storeItem.thumbnail }}" alt="Unable to locate image">
+  </div>
+
+  <div class="descriptionPane">
+    {{ storeItem.cardDescr }}
+  </div>
+</a>
 
 <a class="price">
   ${{ storeItem.price }}
 </a>
 
-<button class="addToCart" onclick="alert('Item added to cart!')">Add to Cart</button>
+<button class="addToCart" onClick="alert('Item added to cart!')">Add to Cart</button>
+
+<p class="quantity">
+  Number in cart: {{ storeItem.quantity }}
+</p>
