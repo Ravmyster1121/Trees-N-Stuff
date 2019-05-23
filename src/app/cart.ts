@@ -13,20 +13,3 @@ export var Cart: Items[] = [{
         product: PRODUCTS[2],
         quantity: 0
     }];
-
-function addItem(id: number)
-{
-    Cart[id].quantity++;
-}
-
-function removeItem(id: number)
-{
-    if(Cart[id].quantity > 0)
-    {
-        Cart[id].quantity--;
-    }
-    else
-    {
-        Cart[id].quantity = 0;
-    }
-}

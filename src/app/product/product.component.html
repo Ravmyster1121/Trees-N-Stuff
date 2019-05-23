@@ -18,4 +18,4 @@
   ${{ storeItem.product.price }}
 </a>
 
-<button class="addToCart" onClick="alert('Item added to cart!')">Add to Cart</button>
+<button class="addToCart" (click)="addItem(storeItem.product.id)">Add to Cart</button>

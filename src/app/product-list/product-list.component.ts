@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Cart } from '../cart';
+import { returnPurchaseCart } from '../cart-view/cart-view.component';
 
 @Component({
   selector: 'app-product-list',

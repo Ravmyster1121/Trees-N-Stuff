@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Cart } from '../cart';
+import { returnStoreCart } from '../product/product.component';
 
 @Component({
   selector: 'app-purchase',
@@ -8,5 +9,5 @@ import { Cart } from '../cart';
 })
 
 export class PurchaseComponent {
-  cartItems = Cart;
+  cartItems = Cart;  
 }

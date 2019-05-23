@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { PRODUCTS } from '../products-data';
+import { Cart } from '../cart';
+import { returnPurchaseCart } from '../cart-view/cart-view.component';
+import { Items } from '../items';
 
 @Component({
   selector: 'app-product',
@@ -11,9 +13,29 @@ import { PRODUCTS } from '../products-data';
 export class ProductComponent{
   @Input() storeItem;
 
+  storeItems = Cart;
+
   constructor(private router: Router){}
 
   onClick(selectedItem){
     this.router.navigate(['/product-page', selectedItem]);
   }
+
+  addItem(selectedItem)
+  {
+    this.storeItems[selectedItem].quantity++;
+
+    alert(this.storeItems[selectedItem].quantity);
+    alert('Item added to cart!');
+  }
+  
+  ngOnInit()
+  {
+    
+  }
 }
+
+export function returnStoreCart(): Items[]
+  {
+    return this.storeItems;
+  }
