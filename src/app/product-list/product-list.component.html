@@ -5,7 +5,7 @@
     <!-- Search-->
     <div class="md-form">
       <input #userSearch type="search" [(ngModel)]="searchText" placeholder="Search text">
-      <button (click)="searchProduct(userSearch.value)">Search!</button>
+      <button (click)="searchProduct(userSearch.value)" (click)="findProduct(userSearch.value)">Search!</button>
 
     </div>
 
@@ -15,6 +15,8 @@
 <p>
   This is where the list of trees and other products will be located
 </p>
+
+
 
 <section class="floatCenter">
   
