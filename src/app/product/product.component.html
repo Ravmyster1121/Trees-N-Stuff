@@ -1,16 +1,18 @@
-<script type="text/typescript" href="./products.ts"></script>
+<!-- Defines the layout of the product cards on the homepage -->
 
-<h2>
-  {{ storeItem.name }}
-</h2>
+<a class="clickPane" (click)="onClick(storeItem.id)">
+  <h2>
+    {{ storeItem.name }}
+  </h2>
 
-<div class="imagePane">
-  <img src="assets/img/{{storeItem.img}}" alt="Unable to locate image">
-</div>
+  <div class="imagePane">
+    <img src="assets/img/{{ storeItem.img }}" alt="Unable to locate image">
+  </div>
 
-<div class="descriptionPane">
-  {{ storeItem.descr }}
-</div>
+  <div class="descriptionPane">
+    {{ storeItem.descr }}
+  </div>
+</a>
 
 <a class="price">
   ${{ storeItem.price }}
@@ -19,7 +21,7 @@
 <button class="addToCart" onClick="">Add to Cart</button>
 
 <p class="quantity">
-    Number in cart: {{ storeItem.quantity }}
+  Number in cart: {{ storeItem.quantity }}
 </p>
 
 <button class="removeFromCart" onClick="">Remove from Cart</button>

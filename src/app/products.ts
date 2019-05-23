@@ -10,15 +10,13 @@ export class Products {
         name: string,
         price: number,
         descr: string,
-        img: string,
-        quantity: number)
+        img: string,)
         {
             this.id = id;
             this.name = name;
             this.price = price;
             this.descr = descr;
             this.img = img;
-            this.quantity = quantity;
         }
 }
 
